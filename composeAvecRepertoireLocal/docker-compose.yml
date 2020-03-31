@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+  wiremock:
+    image: rodolpheche/wiremock
+    ports:
+    - "8080:8080"
+    volumes:
+    - $PWD/../composeAvecStubDansImage:/home/wiremock
+    command: --record-mappings --verbose --global-response-templating

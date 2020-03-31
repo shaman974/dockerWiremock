@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPattern": "/coefficient\\?courtier=([a-zA-Z0-9]*)&option=D"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "courtier": "{{request.query.courtier}}",
+            "option": "{{request.query.option}}",
+            "coefOption":1,
+            "autreConstruction": -0.45
+        },
+        "transformers": ["response-template"],
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

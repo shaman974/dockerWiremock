@@ -1,0 +1,7 @@
+version: '2.0'
+services:
+  wiremock:
+    build: .
+    ports:
+    - "8080:8080"
+    command: --record-mappings --verbose --global-response-templating

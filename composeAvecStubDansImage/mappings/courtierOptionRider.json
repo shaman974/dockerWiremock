@@ -1,0 +1,18 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPattern": "/coefficient\\?courtier=([a-zA-Z0-9]*)&option=RIDER"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "courtier": "{{request.query.courtier}}",
+            "option": "{{request.query.option}}",
+            "coefOption":1.1,
+            "autreConstruction": -0.45
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}
