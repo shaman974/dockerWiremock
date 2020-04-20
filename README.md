@@ -16,7 +16,7 @@ Exemple de lancement avec docker avec un repertoire :
 mkdir wiremock
 mkdir extension
 
-docker run -d -p 8080:8080 -v ./wiremock:/home/wiremock rodolpheche/wiremock -v ./wiremock/extensions:/var/wiremock/extensions  --record-mappings --verbose --global-response-templating
+docker run -d -p 8080:8080 -v $PWD/wiremock:/home/wiremock rodolpheche/wiremock -v $PWD/wiremock/extensions:/var/wiremock/extensions  --record-mappings --verbose --global-response-templating
 ```
 
 ## Paramètres utiles
